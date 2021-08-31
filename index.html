@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel='stylesheet' href='shop.css'>
+    <!--owl-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"  >
+    
+    <title>Document</title>
+</head>
+<body onload='load()'>
+    
+
+<header>
+    <nav class='navbar navbar-expand-lg navbar-light  position-fixed fixed-top'>
+        <div class='container'>
+            <button class='navbar-toggler' data-bs-target='#colap' data-bs-toggle='collapse'><span class='navbar-toggler-icon'></span></button>
+            <button class='btn btn-outline-warning  rounded-circle' data-bs-target='#mod' data-bs-toggle='modal'  id='cart'><span class='bi bi-cart3 position-relative text-dark'><span class='badge bg-warning position-absolute text-dark' id='count'></span></span></button>
+
+            <h1 class='navbar-brand mx-auto'><span class='text-warning '>S</span><span class='text-danger'>H</span><span class='text-primary'>O</span>P</h1>
+
+            <div class='collapse navbar-collapse' id='colap'>
+                 <ul class='navbar-nav ms-auto'>
+                    <li class='nav-item nav-link'><a href='javascript:void(0)'>Home</a></li>
+                    <li class='nav-item nav-link'><a href='javascript:void(0)'>Home</a></li>
+                    <li class='nav-item nav-link'><a href='javascript:void(0)'>Home</a></li>
+                    <li class='nav-item nav-link'><a href='javascript:void(0)'>Home</a></li>
+                 </ul>
+             </div>
+
+        </div>
+
+    </nav>
+    <!--coarousel-->
+    <div class='carousel slide mt-5' data-bs-ride='carousel' id='pa'>
+       <div class='carousel-inner '>
+            <div class='carousel-item active'>
+                <img src='screnshot/s3.png' class='w-100' height='250px'>
+                <div class='carousel-caption text-start'>
+                    <button class='btn btn-outline-primary'>Add to cart</button>
+                </div>
+                </div>
+            
+            <div class='carousel-item'>
+                <img src='screnshot/s4.png' class='w-100' height='250px'>
+                <div class='carousel-caption text-start'>
+                    <button class='btn btn-outline-primary'>Add to cart</button>
+                </div>
+            </div>
+            <div class='carousel-item'>
+                <img src='screnshot/screnshot.png' class='w-100' height='250px'>
+                <div class='carousel-caption text-end'>
+                    <button class='btn btn-outline-primary'>Add to cart</button>
+                </div>
+            </div>
+            <button class='carousel-control-prev' data-bs-target='#pa' data-bs-slide='prev'><span class='carousel-control-prev-icon'></span></button>
+            <button class='carousel-control-next' data-bs-target='#pa' data-bs-slide='next'><span class='carousel-control-next-icon'></span></button>
+        <div class='carousel-indicators'>
+            <button data-bs-target='#pa' data-bs-slide-to='0' class='active'></button>
+            <button data-bs-target='#pa' data-bs-slide-to='1'></button>
+            <button data-bs-target='#pa' data-bs-slide-to='2'></button>
+        </div>
+       </div>
+    </div>
+</header>
+<!-------------------------->
+
+<div class='my-3 shadow container py-2' id='i'>
+    <div class='row g-2'>
+        <div class='col-md-2 col-6  mx-auto shadow'>
+            <div class='card text-center'>
+                <img src='images/jeans.jpg' class='mx-auto' width='100%' height='100'>
+                <div class='card-footer'>
+                    <p>women's</p>
+                </div>
+            </div>
+        </div>
+        <div class='col-md-2 col-6  mx-auto shadow'>
+            <div class='card text-center'>
+                <img src='images/shirt.jpg' class='mx-auto' width='100%' height='100'>
+                <div class='card-footer'>
+                    <p>Men's</p>
+                </div>
+            </div>
+        </div>
+        <div class='col-md-2 col-6  mx-auto shadow'>
+            <div class='card text-center'>
+                <img src='images/shoe1.png' class='mx-auto' width='100%' height='100'>
+                <div class='card-footer'>
+                    <p>Footwear</p>
+                </div>
+            </div>
+        </div>
+        <div class='col-md-2 col-6  mx-auto shadow'>
+            <div class='card text-center'>
+                <img src='images/eletronic.jpg' class='mx-auto' width='100%' height='100'>
+                <div class='card-footer'>
+                    <p>Electronic</p>
+                </div>
+            </div>
+        </div>
+        <div class='col-md-2 col-6  mx-auto'>
+            <div class='card text-center shadow'>
+                <img src='images/jewellery.jpg' class='mx-auto' width='100%' height='100'>
+                <div class='card-footer'>
+                    <p>Jewellery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------->
+
+<div class='container my-5 py-2 bg-light' id='c_'>
+    <div class='row gy-3'>
+        <div class='col-md-3 col-10 mx-auto'>
+            <label class='form-label'>Select category</label>
+            <select class='form-select' size="2" id='sel' >
+                        
+            </select>
+        </div>
+        <div class='col-md-9 col-11 mx-auto'>
+            <div class='row g-2' id='ro'></div>
+        </div>
+    </div>
+</div>
+
+<!--owl-->
+<div  class='my-3 container bg-info py-2'>
+    <div class='row'>
+    <div class="owl-carousel owl-theme" id='owll'>
+       <div class="item">
+         
+        <a href='#c_'><div class='card text-center ' onclick='owl_fetch("electronics")'>
+    <img src='images/eletronic.jpg' class='card-img-top' height='150' width='100%'>
+    <div class='card-footer'>
+        electronic
+    </div>
+</div></a>
+       </div>
+       <div class="item">
+        <a href='#c_'> <div class='card text-center' onclick='owl_fetch("electronics")'>
+        <img src='images/eletronic.jpg' class='card-img-top' height='150' width='100%'>
+        <div class='card-footer'>
+            electronic
+        </div>
+    </div></a>
+      </div>
+        <div class="item">
+            <a href='#c_'><div class='card text-center'onclick="owl_fetch(`men's clothing`)">
+            <img src='images/shoes5.png' class='card-img-top' height='150' width='100%'>
+            <div class='card-footer'>
+                Shoes
+            </div>
+        </div></a>
+    </div>
+        <div class="item">
+            <a href='#c_'><div class='card text-center' onclick="owl_fetch(`men's clothing`)">
+            <img src='images/shoe1.png' class='card-img-top' height='150' width='100%'>
+            <div class='card-footer'>
+                Shoes
+            </div>
+        </div></a>
+    </div>
+        <div class="item">
+            <a href='#c_'><div class='card text-center' onclick="owl_fetch(`men's clothing`)">
+            <img src='images/shirt.jpg' class='card-img-top' height='150' width='100%'>
+            <div class='card-footer'>
+                Shirt
+            </div>
+        </div></a>
+    </div>
+        <div class="item">
+            <a href='#c_'><div class='card text-center' onclick="owl_fetch(`jewelery`)">
+            <img src='images/jewellery.jpg' class='card-img-top' height='150' width='100%'>
+            <div class='card-footer'>
+                Jewellery
+            </div>
+        </div></a>
+    </div>
+        <div class="item">
+            <a href='#c_'><div class='card text-center' onclick="owl_fetch(`women's clothing`)">
+            <img src='images/jeans.jpg' class='card-img-top' height='150' width='100%'>
+            <div class='card-footer'>
+               Jeans
+            </div>
+        </div></a>
+    </div>
+       
+       
+    </div>
+    </div>
+</div>
+
+
+
+<!--footer-->
+<footer class='text-center'>
+<p>website devloped by<span class='bi bi-hammer text-danger'> G</span>outam parchanda </p>
+</footer>
+
+
+<!--cart modal-->
+<div class='modal' id='mod'>
+    <div class='modal-dialog'>
+        <div class='modal-content' id='mod_body'>
+            <div class='modal-header bg-light'>
+                <h1>Cart</h1>
+                <button class='btn btn-close' data-bs-dismiss='modal'></button>
+            </div>
+            <div class='modal-body'>
+                <table class='table table-hover table-borderless'>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Preview</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+                        
+                    </tbody>
+                </table>
+               </div>
+               <div class='modal-footer'>
+                  total: <p id='total'></p><br>
+                   <button class='btn btn-primary' onclick='printt()'>Print/download</button>
+               </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src='shop.js'></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!--owl-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  })
+    </script>
+</body>
+
+</html>

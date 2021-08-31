@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+#cart{
+    position:fixed;
+    bottom:5%;
+    right:5%;
+
+}
+.navbar{
+    background:linear-gradient(180deg,rgb(216, 123, 138),rgb(187, 90, 187),lightblue)
+
+}
+ul li{
+    margin:0 5px;
+}
+li a{
+    text-decoration: none;
+    color:rgba(30,30,30);
+    font-weight: bold;
+    position:relative;
+}
+li a:hover{
+    color:black;
+}
+li a::before{
+    content:'';
+    top:100%;
+    width:0%;
+    height:3px;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.37)50%,white); 
+       position:absolute;
+       transition:all 0.3s;
+
+    }
+li a:hover::before{
+    width:100%;
+    transition:all 0.3s;
+    
+}
+.card:hover{
+    cursor: pointer;
+}
+#i{
+    background:linear-gradient(180deg,rgb(216, 123, 138),rgb(187, 90, 187),lightblue)
+    
+}
+#owll .card{
+    cursor: pointer;
+}
+#owll a{
+    text-decoration: none;
+    color:black;
+}
